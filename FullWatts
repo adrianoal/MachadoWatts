@@ -1,0 +1,301 @@
+----------------------------------------------------------------------------------------------------
+							---- Treinamento Watts - Machado ----
+----------------------------------------------------------------------------------------------------
+30/06/2020:
+-----------
+
+ (BACEN) Banco Central:
+ ----------------------
+	Um banco central é uma "entidade independente ou ligada ao Estado cuja função é gerir a 
+	política econômica", ou seja, garantir a estabilidade e o poder de compra da moeda de cada
+	país e do sistema financeiro como um todo.
+ 
+ 
+ (CADE) Conselho Administrativo de Defesa Econômica:
+ ---------------------------------------------------
+	 É uma autarquia federal brasileira, vinculada ao Ministério da Justiça e Segurança Pública, 
+	 componente do "Sistema Brasileiro de Defesa da Concorrência", ao lado da Secretaria de 
+	 Acompanhamento Econômico. 
+ 
+ 
+ Serviços em .Net --> É só uma casca que chama as rotinas PL/SQL
+ 
+ POS --> Em Inglês: Point Of Sale (Ponto de Venda)
+ PDV --> Em Português: (Ponto de Venda) 
+		
+ Observação: Tanto POS ou PDV, são conhecidos também, como frente de caixa.
+
+ Este sistema é estruturado em três processos ou ferramentas:
+
+	* O Terminal: É onde fica a máquina com integração no pagamento do cartão, a caixa 
+	  registradora e a impressora de nota fiscal.
+	  
+	* O Sistema: Integra o PDV com os processos de de controle de estoque e finanças em uma única
+	  interface.
+	  
+	* Controle Financeiro: Comunicação direta com bancos e estruturação automática de entrada
+	  e saídas da empresa.
+		
+		 Faz a interface entre a conta do comerciante e a do cliente. 
+		 Elas nada mais são do que o “veículo” que permite que o dinheiro do pagador vá 
+		 para a conta do recebedor.
+		 
+
+ Watts tem duas linha de negocio:
+  
+  TC --> Um produto que a Ticket lançou p/ fazer abastecimento de veiculo, manutençao, pedagio, 
+			tudo q envoleve custos relacionado com veículos.
+			
+  Tc --> Era usado no Mexico e na Argentina. 
+		 Ontem 29/06/2020 foi descontinuado na argentina.
+  
+  o mexico é o maior cliente
+  
+  Produto Benefícios:
+  -----------------
+					VR
+					VA
+					VF
+					Só no brasil
+		
+ Ticketcar do Brasil está na ticketlog.
+		
+ No Mexico só tem o produto TC abastecimento.
+ 
+ Rede de Captura:
+ ----------------
+ Significa uma variedade de soluções de meios de pagamentos.
+ 
+ Um bom meio de captura de vendas é aquele que facilita a vida do comprador e garante a 
+ segurança do vendedor.
+ 
+ Obs:  Meio de captura de vendas não é igual a forma de pagamento.
+ 
+ Rede de Captura --> Está associado às soluções eletrônicas de recebimento das vendas.
+ 
+  
+  Rede de captura de transações consistem em diferentes partes:
+  
+   * Clientes:
+		Responsável pela compra do produto ou pela aquisição do produto.
+		
+   * Adquirentes:
+		A adquirência de cartões de crédito tua no credenciamento dos lojistas e permite a 
+		captura de transações feitas com cartões de crédito e débito;
+   
+   * Autorizadores de chip:
+		Antes de o cartão poder ser utilizado é necessário que ele tenha autorização para que 
+		possa realizar as mais diferentes transações.
+		
+		
+ CONTINUAR PESQUISANDO
+ 
+  http://www.afrac.com.br/o-mercado-de-adquirencia/
+ 
+ 
+
+ 
+ 
+ 
+ 
+ Para o Mexico:
+ Tem algumas redes de captura: 
+  
+ 				A empresa é um intermediario, getnet, credicar, faz a comunicação com o servidor
+				A red de captura que diz, o que vai aceitar.
+
+
+ 
+
+ Watts é a parte op do processo
+ ERP parte financeiro do processo
+ 
+  A rede de captura nao mexer com dinheiro da ticket e do cliente
+  
+  no mexico 5 rede de captura
+  no brasil umas 10 rede de captura
+  
+  Watts é composto por Sunnel? --> tem para benecite so autorizador financeiro 
+								    tem a parte de regra de negocio, ex. dia de domingo
+									
+					   Sunnel --> É um "autorizador financeiro" desenvolvido pela Greentech,uma 
+								  empresa da colombia que presta serviços pra gente na parte de 
+								  regra financeira. Está nos nossos servidores do Brasil.
+								  Essas coisas nao podemos alterar na mão, temos privilegios mas 
+								  não pode alterar.
+						
+						
+ No Watts tem uma parte que chama Horímetro e Hodômetro:
+ -------------------------------------------------------
+ Horimentro --> Para medir hora
+ Hodômetro -->  para medir distância percorrida
+						(qual foi o último hodometro q vc me mandou pra mim)
+
+ Benefite - tem no brasil e no chile								
+ tc - no mexico
+
+ Mexico tem 5 ambientes:
+ -----------------------
+ * DESE
+ * QA
+ * HOMO
+ * PRE-PRODUCAO
+ * PRODUCAO 
+  
+ Chile e Brasil tem 4 ambientes:
+ -------------------------------
+ * DESE
+ * QA
+ * HOMO
+ * PRODUCAO 
+ 
+ 
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+						---- 02/07/2020: Treinamento com Machado ----
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+ Ambiente banco de dados:
+ ------------------------
+ 
+ Benefit Brasil
+ --------------
+ 
+	Desenvolvimento
+	Owner:   DWBBR01
+	Usuario: SGCADMIN 
+	Senha:   SGCADMIN
+	
+	Homologação 
+	Owner do usuário e senha também. Banco: HWBBR01
+	
+	Produção: PWBBR01 com usuário e senha próprios
+
+ 
+ Benefit Chile:	
+ --------------
+	Dese: DWBCL01
+	Homo: HWBCL01
+	Prod: PWBCL01
+	QA: QWBCL01
+	Owner: CL_SUNNELADM co  mesma senha
+	
+ México: 
+ 
+	Dese: DWTMX01
+	QA: QWTMX01
+	Homo: HWTMX01
+	Pre-Prod: TWTMX01
+	Prod: PWTMX01
+    Owner: MX_ADM				
+ 	MX_TKT					
+	MX_INTERFACE	
+	MX_SUNNELADM
+	WTMX_RPT_STG
+--------------------------------------------------------------------------------------------------
+  Assunto: Benefit
+  
+  Pesquisar sobre precatório.
+  
+  contato da pessoa com o comercial da ticket, que elabora uma proposta para o clienbte
+  o Cliente assina o contrato que é cadastrado no erp, aí vai para o Watts
+  
+  Todo dia tem uma interface entre o erp e o watts que cadastro os contratos pendentes.
+  
+  efetuar o cadastro dos cartoões do cliente, o primeiro cadastro.
+  
+  Vai pedir credito para os funcionários dele.
+  
+  o pedido entra via portal(um sistema Web) de pedido na BU (Bussines Unit/Unidade de negocio) 
+  da ticket Gerente da Bu é o Adnaur.
+  
+  Se nao tem cartão ainda, a gente faz um pedido de cartão, aí tem um pedido de credito 
+  agendado para a data escolihida.
+  
+ Dentro do cartão tem uma tabela de portador, uma de entidade, tbm tem uma unidade de entraga
+ Dentro da filial tem o departamento.
+ 
+ Pode ter varias unidades de entrega com mesmo endereço. fincaneir, rh 
+  
+  o pedido entra no Watts, se é pra hoje já processa,  
+  
+  Quando recebe o cartão de vem no envelope - que chama kit.
+  
+  só a logistica de entrega que é diferente.
+  
+  quando um entrega é personalizada, o cliente precisa avisa a ticket, para fazer do jeito quala 
+  empresa quer, porém, isso tem uma taxa diferente.
+  
+  Watts quem gera o cartão
+  
+  
+ -- ALGUMAS TABELAS RELACIONADAS AOS CARTOES USADAS NO TREINAMENTO --
+ 
+ -- banco dese --> befit brasil:
+SELECT * FROM SGCADMIN.T_GCARD ORDER BY 1 DESC; -- TABELA DO CARTAO
+SELECT * FROM SGCADMIN.T_GCARDPLASTICCARD; -- 2º CAMPO NUMERO DO CARTAO 
+SELECT * FROM SGCADMIN.T_GPLASTICCARD -- 122 INDICA EMISSAO DO CARTAO
+                                      -- 130 REEMITIDO
+EMBOSSINGLINE2 --> NOME FUNCIONARIO                                      
+EMBOSSINGLINE2 --> NOME EMPRESA                                      
+
+SELECT * FROM SGCADMIN.T_GCARDACCOUNT -- TABELA QUE LIGA CARTAO COM A CONTA DO CARTAO
+ ACCOUNTID -- E NELE QUE FICA O DINHEIRO
+
+SELECT * FROM SGCADMIN.T_GACCOUNT
+
+SELECT * FROM SGCADMIN.T_GDEBITACCOUNT -- 
+
+
+-- ORDER BY 1 DESC, para informar a coluna desejada
+-- CARDHOLDERID --> E O PORTADOR
+
+SELECT * FROM SGCADMIN.T_GCARDHOLDER 
+EMBOSSINGNAME --> PORTADOR do cartao
+
+--BIN -- 6 PRIMEIRAS POSICOES DO CARTAO
+
+EDENRED --> É FRANCESA
+ATE 2010 A TICKET ERA UMA EMPRESA DO GRUPO ACOR.
+HOJE A TICKET CHAMA-SE EDENRED DESDE JUNHO 2010
+
+2014 A 2015 ESTAVA NO PROCESSO COM BACEN PARA SE TORNAR UM BANCO. 
+ESTAVA BUROCRATICO, ENTAO COMPROU UM BANCO.
+
+-- PROCESSADORA DA CIELE É A FIDELI, empresa americana q o bradesco comptrou para processar os cartões de beneficios
+
+-- Ticket esta em 48 paises
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+						---- : Treinamento com Machado ----
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
