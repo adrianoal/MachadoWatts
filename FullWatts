@@ -268,9 +268,111 @@ ESTAVA BUROCRATICO, ENTAO COMPROU UM BANCO.
 -- Ticket esta em 48 paises
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
-						---- : Treinamento com Machado ----
+					03/07/2020	---- : Treinamento com Machado ----
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
+
+ ESTABELECIMENTO:
+ ----------------
+ 
+ Quando o estabelecimento quer aceitar o cartões que o mercado oferece, mais VR e VA ele entra 
+em contato com o adquirente(Empresa da máquina que ele trabalha) para informar o interesse em 
+aceitar as variedades de bandeiras do mercado: Master, Visa e etc, VR e VA: TICKET/SODEXO/ALELO 
+e etc. Para isso é necessário fazer um contrato com a adquirente.
+ 
+ VR 	 --> Apenas se o estabelecimento oferece comida pronta
+ VA 	 --> Apenas se o estabelecimento oferece insumos
+ VR e VA --> Quando o estabelecimento oferece os dois
+
+ ADQUIRENTE: 
+ -----------
+
+	Link: https://blog.vindi.com.br/o-que-sao-adquirentes-e-quais-trabalham-no-brasil/
+	
+		Adquirentes são responsáveis por processar pagamentos no e-commerce e nas lojas físicas.
+		Ela é a tradicional “maquininha” que faz a comunicação direta entre a loja 
+		(física ou online), bandeiras e os bancos emissores de cartões.
+
+ *  Principais adquirentes disponíveis no mercado são: 
+													Cielo, Rede, Stone e Getnet. 
+ 														
+    Essas adquirentes são as responsáveis por se comunicar com bandeiras como Visa, MasterCard, 
+	Elo e bancos emissores, como o Bradesco, Itaú, Santander, entre outras agências.														
+													
+ 
+ * 	Quais são as adquirentes presentes no Brasil?
+	
+	Rede   --> Desde de 2012 pertence ao Itaú
+	Getnet --> Faz parte do conglomerado financeiro do Santander
+	Cielo  --> É uma empresa de tecnologia e serviços para varejo
+	Stone  --> É uma marca com capital aberto na bolsa NASDAQ de Nova York
+	
+ As Adquirente que geram o serviço de captura:
+			
+ Em uma compra, por exemplo, a adquirente começa a fazer o seu papel a partir do momento que o 
+cliente insere os dados bancários para realizar uma compra. 
+
+ Assim, a adquirente “conversa” diretamente com as bandeiras, que verificam com os bancos 
+emissores, para analisar se existe saldo ou crédito para que a transação seja realizada.
+
+ 
+ CONHECENDO O SISTEMA QUE INTEGRA O SERVIÇO DE REDE DE CAPTURA:
+ --------------------------------------------------------------
+ 
+ Link: http://www.redecompras.com.br/servico-rede-captura
+ 
+  É possível dizer que o serviço de rede de captura é realizado na hora em que uma determinada 
+transação passa do status “autorizada” para “paga”. 
+ Sendo assim, a rede de captura pode mostrar para o lojista que a transação acontecera e que o 
+dinheiro cairá na sua conta.
+ O serviço de rede de captura é realizado de maneira automática.
+
+
+ EMISSOR:
+ --------
+ 
+ Antigamente as emissoras de cartões eram basicamente instituições bancárias.
+ Atualmente outras instituições como lojas de departamentos, supermercados, farmácias, 
+livrarias e até postos de gasolina, passaram a emitir seus próprios cartões.
+
+
+ Emissor é a bandeira, a empresa que gerar o cartão, o dono do bin que disponibiliza o limite de 
+credito, quem gerencia o limite do carão.
+
+Estabelecimeto é quem aceita os cartoes
+
+Embossadora - É quem fabriaca os cartões para bandeiras diferentes, interface 1022 é de embose
+			 HSM é um software/ para criptografia de dados, que grava o dado criptografado na 
+			 nossa tabela.
+			 a embossadora tem a chave da criptografia.
+
+
+Uma outra empresa fabrica o chip: Com alguns padrões de seguração, por conta da capacidade de 
+memoria ship.
+
+Uma parte do que a empresa gasta de VR/VA, ela deixa descontar no imposto de renda.
+
+
+
+-- Tabelas da Adquirente: 
+
+
+SELECT * FROM SGCADMIN.T_GACQUIRERINSTITUTION; -- TABELA DO BENEFIT Adquirente
+--DESCRIPTION NESSA TABELA --> É ADQUIRENTE
+
+-- A MESMA EMPRESA PODE TER DUAS FUNÇÕES: ADQUIRENTE E EMBOSADORA
+SELECT * FROM SGCADMIN.T_GEMBOSSINGPROVIDER -- NESSA AS EMPRESAS Q FABRICAM PLATICO: EMBOSADORA
+                                            -- TEM MAIS DE UMA EMBOSADORA POR QUESTAO DE LOGISTICA
+
+-- TABELAS DO ESTABELECIMENTO:
+SELECT * FROM SGCADMIN.T_GMERCHANT; -- tabele Estabelecimento                                            
+SELECT * FROM SGCADMIN.T_GMERCHANTcontract -- Contrato do estabelecimento                                            
+SELECT * FROM SGCADMIN.T_GACQRINSTMEMBERMERCHANT -- LIGA O MERCHANTID COM ACQUIRERINSTITUTION --  
+SELECT * FROM SGCADMIN.T_GACQRINSTMEMBERMERCHANTCONTR;   -- SE O ESTABELECIMENTO ESTA CADASTRDO NO ADQUIRENTE OU NAO
+
+
+
+
 
 
 
