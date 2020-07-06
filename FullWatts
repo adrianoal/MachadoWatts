@@ -101,19 +101,19 @@
  Para o Mexico:
  Tem algumas redes de captura: 
   
- 				A empresa é um intermediario, getnet, credicar, faz a comunicação com o servidor
-				A red de captura que diz, o que vai aceitar.
+ 	A empresa é um intermediario, getnet, credicar, faz a comunicação com o servidor
+	A rede de captura que diz, o que vai aceitar.
 
 
  
 
- Watts é a parte op do processo
+ Watts é a parte operacional do processo
  ERP parte financeiro do processo
  
   A rede de captura nao mexer com dinheiro da ticket e do cliente
   
-  no mexico 5 rede de captura
-  no brasil umas 10 rede de captura
+  No mexico 5 rede de captura
+  No brasil umas 10 rede de captura
   
   Watts é composto por Sunnel? --> tem para benecite so autorizador financeiro 
 								    tem a parte de regra de negocio, ex. dia de domingo
@@ -131,8 +131,8 @@
  Hodômetro -->  para medir distância percorrida
 						(qual foi o último hodometro q vc me mandou pra mim)
 
- Benefite - tem no brasil e no chile								
- tc - no mexico
+ Benefite - Tem no Brasil e no Chile								
+ TC - no mexico
 
  Mexico tem 5 ambientes:
  -----------------------
@@ -178,7 +178,7 @@
 	Dese: DWBCL01
 	Homo: HWBCL01
 	Prod: PWBCL01
-	QA: QWBCL01
+	QA:   QWBCL01
 	Owner: CL_SUNNELADM co  mesma senha
 	
  México: 
@@ -198,34 +198,35 @@
   
   Pesquisar sobre precatório.
   
-  contato da pessoa com o comercial da ticket, que elabora uma proposta para o clienbte
-  o Cliente assina o contrato que é cadastrado no erp, aí vai para o Watts
+  contato da PF/PJ com o comercial da ticket, que elabora uma proposta para o cliente.
+  o Cliente assina o contrato que é cadastrado no ERP, aí vai para o Watts
   
-  Todo dia tem uma interface entre o erp e o watts que cadastro os contratos pendentes.
+  Todo dia tem uma interface entre o ERP e o Watts que cadastra os contratos pendentes.
   
-  efetuar o cadastro dos cartoões do cliente, o primeiro cadastro.
+  Efetuar o cadastro dos cartoões do cliente, o primeiro cadastro.
   
   Vai pedir credito para os funcionários dele.
   
-  o pedido entra via portal(um sistema Web) de pedido na BU (Bussines Unit/Unidade de negocio) 
-  da ticket Gerente da Bu é o Adnaur.
+  O pedido entra via portal(um sistema Web) de pedido na BU (Bussines Unit/Unidade de negocio) 
+  da ticket.
+  Gerente da Bu é o Adnaur.
   
-  Se nao tem cartão ainda, a gente faz um pedido de cartão, aí tem um pedido de credito 
+  Se não tem cartão ainda, a gente faz um pedido de cartão, aí tem um pedido de credito 
   agendado para a data escolihida.
   
  Dentro do cartão tem uma tabela de portador, uma de entidade, tbm tem uma unidade de entraga
  Dentro da filial tem o departamento.
  
- Pode ter varias unidades de entrega com mesmo endereço. fincaneir, rh 
+ Pode ter varias unidades de entrega com mesmo endereço. fincaneir, rh, comercial e etc.
   
-  o pedido entra no Watts, se é pra hoje já processa,  
+ O pedido entra no Watts, se é pra hoje já processa,  
   
-  Quando recebe o cartão de vem no envelope - que chama kit.
+  Quando recebe o cartão que vem no envelope - que chama kit.
   
-  só a logistica de entrega que é diferente.
+  Só a logística de entrega que é diferente.
   
-  quando um entrega é personalizada, o cliente precisa avisa a ticket, para fazer do jeito quala 
-  empresa quer, porém, isso tem uma taxa diferente.
+  Quando uma entrega é personalizada, o cliente precisa avisar a ticket, para fazer do jeito dela,
+  porém, isso tem uma taxa diferente.
   
   Watts quem gera o cartão
   
@@ -336,21 +337,21 @@ dinheiro cairá na sua conta.
 livrarias e até postos de gasolina, passaram a emitir seus próprios cartões.
 
 
- Emissor é a bandeira, a empresa que gerar o cartão, o dono do bin que disponibiliza o limite de 
-credito, quem gerencia o limite do carão.
+ Emissor é a bandeira, a empresa que gerar o cartão, o "dono do bin" que disponibiliza o limite 
+de credito, quem gerencia o limite do carão.
 
 Estabelecimeto é quem aceita os cartoes
 
 Embossadora - É quem fabriaca os cartões para bandeiras diferentes, interface 1022 é de embose
-			 HSM é um software/ para criptografia de dados, que grava o dado criptografado na 
+			 HSM é um software/ para criptografia de dados, que grava o dado criptografados na 
 			 nossa tabela.
-			 a embossadora tem a chave da criptografia.
+			 A embossadora tem a chave da criptografia.
 
 
-Uma outra empresa fabrica o chip: Com alguns padrões de seguração, por conta da capacidade de 
-memoria ship.
+ Uma outra empresa fabrica o chip: 
+ Com alguns padrões de seguração por conta da capacidade de memoria ship.
 
-Uma parte do que a empresa gasta de VR/VA, ela deixa descontar no imposto de renda.
+ Uma parte do que a empresa gasta de VR/VA, ela deixa descontar no imposto de renda.
 
 
 
@@ -371,7 +372,11 @@ SELECT * FROM SGCADMIN.T_GACQRINSTMEMBERMERCHANT -- LIGA O MERCHANTID COM ACQUIR
 SELECT * FROM SGCADMIN.T_GACQRINSTMEMBERMERCHANTCONTR;   -- SE O ESTABELECIMENTO ESTA CADASTRDO NO ADQUIRENTE OU NAO
 
 
-
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+					06/07/2020	---- : Treinamento com Machado ----
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 
 
 
