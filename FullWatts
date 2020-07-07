@@ -378,11 +378,35 @@ SELECT * FROM SGCADMIN.T_GACQRINSTMEMBERMERCHANTCONTR;   -- SE O ESTABELECIMENTO
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
+ Temos tres grandes grupos de bath
+ 
+ carrente_date a data q controla que dia está processando
 
 
+  arquivo 1006 --> rede de capitura, com as transações do dia.
+					vem a transasao
+					volta a confirma ou negaçao
+					e devolve pra gente
 
+ Autosys --> Ferramenta que faz a execução dos jobs
+				Quem programa execução hora, data e ordem somos nós.
+				
+
+ d_c --> é job que faz alguma coisas
+ 
+ Tudo que tem pitoco --> é ponto de conciliação, verificar se tudas as transações foram conciliadas?
+   
+  Embossing --> Geração de cartão.
   
   
+Baixar --> O filezila
+Autosys
+
+
+
+
+
+
   
   
   
