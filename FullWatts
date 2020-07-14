@@ -394,7 +394,7 @@ SELECT * FROM SGCADMIN.T_GACQRINSTMEMBERMERCHANTCONTR;   -- SE O ESTABELECIMENTO
 
  d_c --> é job que faz alguma coisas
  
- Tudo que tem pitoco --> é ponto de conciliação, verificar se tudas as transações foram conciliadas?
+ Tudo que tem pitoco --> É ponto de conciliação, verificar se todas as transações foram conciliadas?
    
   Embossing --> Geração de cartão.
   
@@ -402,10 +402,53 @@ SELECT * FROM SGCADMIN.T_GACQRINSTMEMBERMERCHANTCONTR;   -- SE O ESTABELECIMENTO
 Baixar --> O filezila
 Autosys
 
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+					14/07/2020	---- : Treinamento com Machado ----
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+ Foi feito uma transacao no POS e nao foi conciliada no 
 
 
+Ambiente de Homologação - Senha Machado:
+----------------------------------------
+Usuario: jmachado
+Senha: mac042020
+Owner: hwtmx01
+  
+ 1º Verificar se essas transacoes foram consiliadas
 
+ 2º Verificar se esta na tabela de interface 1030
+	-- Se estiver, morreu, nao tem o que fazer.
+	
+	
+ Obs: A consilicacao ocorre no dia seguinte da transacao.
 
+ 
+-- MXESPECTK-11462
+/*
+User : jmachado
+Senha: Mac042020
+Banco: HWTMX01
+*/
+
+Select au.*
+  From  mx_sunneladm.t_gauthorizationrequest  ar
+       ,mx_sunneladm.t_gauthorization         au
+       ,mx_sunneladm.t_gpurchaseauthorization pu
+ Where pu.authorizationrequestid =  ar.authorizationrequestid
+   And pu.authorizationid        =  au.authorizationid
+   And ar.cardid                 =  '6363180041261072'
+   And ar.transactiondate        =  to_date('08/07/2020', 'DD/MM/YYYY')
+   And ar.transactionamount      in (1511.00, 831.05, 982.15, 1133.25, 1284.35, 1435.45, 1586.55, 1737.65);
+
+Select *
+  From mx_interface.tktmx_nptc_out_1030_opera_det opd
+ Where opd.cardid               =  '6363180041261072'
+   And opd.transactionamount    in (1511.00, 831.05, 982.15, 1133.25, 1284.35, 1435.45, 1586.55, 1737.65)
+   And trunc(opd.operationtime) =  to_date('08/07/2020', 'DD/MM/YYYY');
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
   
   
